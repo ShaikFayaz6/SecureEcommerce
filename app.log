@@ -1,0 +1,932 @@
+2025-04-22 09:37:01,227 DEBUG: Script starting... Process ID: 16788
+2025-04-22 09:37:01,228 DEBUG: Loading environment variables...
+2025-04-22 09:37:01,230 DEBUG: FLASK_ENV: None
+2025-04-22 09:37:01,230 DEBUG: Creating Flask app...
+2025-04-22 09:37:01,235 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:37:01,237 DEBUG: Environment: production, IS_PRODUCTION: True
+2025-04-22 09:37:01,237 DEBUG: Configuring Flask app...
+2025-04-22 09:37:01,239 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'postgresql://secure_sx88_user:I6Wdds9mxg256ADuFpii9QXP7SAIuZop@dpg-d03j2mje5dus73abjdu0-a.oregon-postgres.render.com/secure_sx88', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': '6LcFtRQrAAAAAHo-4F6DvBTyodOon_yq8j25LrU2', 'RECAPTCHA_SECRET_KEY': '6LcFtRQrAAAAAHJ8rA3_T-CUK0sfdbwTHZKhoWuh', 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:37:01,240 DEBUG: Configuring Stripe...
+2025-04-22 09:37:01,241 DEBUG: Stripe configured successfully
+2025-04-22 09:37:01,242 DEBUG: Initializing Flask extensions...
+2025-04-22 09:37:01,313 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:37:01,313 DEBUG: Creating upload folder...
+2025-04-22 09:37:01,314 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:37:01,314 DEBUG: Defining models...
+2025-04-22 09:37:01,323 DEBUG: Models defined successfully
+2025-04-22 09:37:01,324 DEBUG: Defining forms...
+2025-04-22 09:37:01,324 DEBUG: Forms defined successfully
+2025-04-22 09:37:01,325 DEBUG: Setting up user loader...
+2025-04-22 09:37:01,325 DEBUG: Defining routes...
+2025-04-22 09:37:01,328 DEBUG: Routes defined successfully
+2025-04-22 09:37:01,328 DEBUG: Initializing database...
+2025-04-22 09:37:04,147 DEBUG: Database initialized successfully
+2025-04-22 09:37:04,272 DEBUG: Starting Flask app...
+2025-04-22 09:37:04,405 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:37:04,406 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:38:00,528 DEBUG: Handling index route
+2025-04-22 09:38:00,587 INFO: 127.0.0.1 - - [22/Apr/2025 09:38:00] "GET / HTTP/1.1" 200 -
+2025-04-22 09:38:01,138 INFO: 127.0.0.1 - - [22/Apr/2025 09:38:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 09:38:06,085 DEBUG: Handling register route
+2025-04-22 09:38:06,162 INFO: 127.0.0.1 - - [22/Apr/2025 09:38:06] "GET /register HTTP/1.1" 200 -
+2025-04-22 09:39:41,770 DEBUG: Script starting... Process ID: 16788
+2025-04-22 09:39:41,772 DEBUG: Loading environment variables...
+2025-04-22 09:39:41,790 DEBUG: FLASK_ENV: None
+2025-04-22 09:39:41,791 DEBUG: Creating Flask app...
+2025-04-22 09:39:41,847 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:39:41,848 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:39:41,849 DEBUG: Configuring Flask app...
+2025-04-22 09:39:41,851 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:39:41,853 DEBUG: Configuring Stripe...
+2025-04-22 09:39:41,855 DEBUG: Stripe configured successfully
+2025-04-22 09:39:41,855 DEBUG: Initializing Flask extensions...
+2025-04-22 09:39:42,122 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:39:42,123 DEBUG: Creating upload folder...
+2025-04-22 09:39:42,123 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:39:42,124 DEBUG: Defining models...
+2025-04-22 09:39:42,253 DEBUG: Models defined successfully
+2025-04-22 09:39:42,255 DEBUG: Defining forms...
+2025-04-22 09:39:42,257 DEBUG: Forms defined successfully
+2025-04-22 09:39:42,257 DEBUG: Setting up user loader...
+2025-04-22 09:39:42,258 DEBUG: Defining routes...
+2025-04-22 09:39:42,267 DEBUG: Routes defined successfully
+2025-04-22 09:39:42,267 DEBUG: Initializing database...
+2025-04-22 09:39:42,354 DEBUG: Database initialized successfully
+2025-04-22 09:39:42,356 DEBUG: Starting Flask app...
+2025-04-22 09:39:42,390 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:39:42,390 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:40:08,041 DEBUG: Script starting... Process ID: 18288
+2025-04-22 09:40:08,041 DEBUG: Loading environment variables...
+2025-04-22 09:40:08,042 DEBUG: FLASK_ENV: None
+2025-04-22 09:40:08,042 DEBUG: Creating Flask app...
+2025-04-22 09:40:08,043 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:40:08,044 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:40:08,044 DEBUG: Configuring Flask app...
+2025-04-22 09:40:08,045 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'postgresql://secure_sx88_user:I6Wdds9mxg256ADuFpii9QXP7SAIuZop@dpg-d03j2mje5dus73abjdu0-a.oregon-postgres.render.com/secure_sx88', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:40:08,046 DEBUG: Configuring Stripe...
+2025-04-22 09:40:08,047 DEBUG: Stripe configured successfully
+2025-04-22 09:40:08,047 DEBUG: Initializing Flask extensions...
+2025-04-22 09:40:08,105 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:40:08,106 DEBUG: Creating upload folder...
+2025-04-22 09:40:08,106 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:40:08,106 DEBUG: Defining models...
+2025-04-22 09:40:08,117 DEBUG: Models defined successfully
+2025-04-22 09:40:08,118 DEBUG: Defining forms...
+2025-04-22 09:40:08,118 DEBUG: Forms defined successfully
+2025-04-22 09:40:08,118 DEBUG: Setting up user loader...
+2025-04-22 09:40:08,119 DEBUG: Defining routes...
+2025-04-22 09:40:08,122 DEBUG: Routes defined successfully
+2025-04-22 09:40:08,122 DEBUG: Initializing database...
+2025-04-22 09:40:11,360 DEBUG: Database initialized successfully
+2025-04-22 09:40:11,443 DEBUG: Starting Flask app...
+2025-04-22 09:40:11,573 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:40:11,574 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:40:15,699 DEBUG: Handling index route
+2025-04-22 09:40:15,730 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:15] "GET / HTTP/1.1" 200 -
+2025-04-22 09:40:20,978 DEBUG: Handling register route
+2025-04-22 09:40:21,036 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:21] "GET /register HTTP/1.1" 200 -
+2025-04-22 09:40:53,230 DEBUG: Handling register route
+2025-04-22 09:40:53,653 DEBUG: Register attempt for username: Fayaz@123
+2025-04-22 09:40:54,414 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:54] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-04-22 09:40:54,979 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:54] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-22 09:40:55,029 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:55] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-22 09:40:55,121 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:55] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=3AqImocKA40FhB3Lr0Ov HTTP/1.1" 200 -
+2025-04-22 09:40:55,148 INFO: 127.0.0.1 - - [22/Apr/2025 09:40:55] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-22 09:42:08,530 DEBUG: Handling register route
+2025-04-22 09:42:08,915 DEBUG: Register attempt for username: Fayaz@123
+2025-04-22 09:42:09,567 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:09] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-04-22 09:42:09,589 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:09] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-22 09:42:09,609 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:09] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-22 09:42:09,655 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:09] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png&s=3AqImocKA40FhB3Lr0Ov HTTP/1.1[0m" 304 -
+2025-04-22 09:42:37,662 DEBUG: Handling register route
+2025-04-22 09:42:37,970 DEBUG: Register attempt for username: Fayaz
+2025-04-22 09:42:38,633 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:38] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-04-22 09:42:38,659 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:38] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-22 09:42:38,667 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:38] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-22 09:42:38,742 INFO: 127.0.0.1 - - [22/Apr/2025 09:42:38] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png&s=3AqImocKA40FhB3Lr0Ov HTTP/1.1[0m" 304 -
+2025-04-22 09:42:55,258 DEBUG: Script starting... Process ID: 18288
+2025-04-22 09:42:55,258 DEBUG: Loading environment variables...
+2025-04-22 09:42:55,260 DEBUG: FLASK_ENV: None
+2025-04-22 09:42:55,261 DEBUG: Creating Flask app...
+2025-04-22 09:42:55,268 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:42:55,269 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:42:55,269 DEBUG: Configuring Flask app...
+2025-04-22 09:42:55,270 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:42:55,271 DEBUG: Configuring Stripe...
+2025-04-22 09:42:55,271 DEBUG: Stripe configured successfully
+2025-04-22 09:42:55,272 DEBUG: Initializing Flask extensions...
+2025-04-22 09:42:55,349 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:42:55,350 DEBUG: Creating upload folder...
+2025-04-22 09:42:55,351 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:42:55,351 DEBUG: Defining models...
+2025-04-22 09:42:55,372 DEBUG: Models defined successfully
+2025-04-22 09:42:55,373 DEBUG: Defining forms...
+2025-04-22 09:42:55,375 DEBUG: Forms defined successfully
+2025-04-22 09:42:55,375 DEBUG: Setting up user loader...
+2025-04-22 09:42:55,376 DEBUG: Defining routes...
+2025-04-22 09:42:55,384 DEBUG: Routes defined successfully
+2025-04-22 09:42:55,384 DEBUG: Initializing database...
+2025-04-22 09:42:55,422 DEBUG: Database initialized successfully
+2025-04-22 09:42:55,423 DEBUG: Starting Flask app...
+2025-04-22 09:42:55,436 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:42:55,437 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:43:06,503 DEBUG: Script starting... Process ID: 10948
+2025-04-22 09:43:06,504 DEBUG: Loading environment variables...
+2025-04-22 09:43:06,504 DEBUG: FLASK_ENV: None
+2025-04-22 09:43:06,504 DEBUG: Creating Flask app...
+2025-04-22 09:43:06,506 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:43:06,506 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:43:06,506 DEBUG: Configuring Flask app...
+2025-04-22 09:43:06,507 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'postgresql://secure_sx88_user:I6Wdds9mxg256ADuFpii9QXP7SAIuZop@dpg-d03j2mje5dus73abjdu0-a.oregon-postgres.render.com/secure_sx88', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:43:06,507 DEBUG: Configuring Stripe...
+2025-04-22 09:43:06,507 DEBUG: Stripe configured successfully
+2025-04-22 09:43:06,508 DEBUG: Initializing Flask extensions...
+2025-04-22 09:43:06,541 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:43:06,541 DEBUG: Creating upload folder...
+2025-04-22 09:43:06,542 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:43:06,542 DEBUG: Defining models...
+2025-04-22 09:43:06,548 DEBUG: Models defined successfully
+2025-04-22 09:43:06,549 DEBUG: Defining forms...
+2025-04-22 09:43:06,550 DEBUG: Forms defined successfully
+2025-04-22 09:43:06,550 DEBUG: Setting up user loader...
+2025-04-22 09:43:06,550 DEBUG: Defining routes...
+2025-04-22 09:43:06,554 DEBUG: Routes defined successfully
+2025-04-22 09:43:06,555 DEBUG: Initializing database...
+2025-04-22 09:43:09,414 DEBUG: Database initialized successfully
+2025-04-22 09:43:09,536 DEBUG: Starting Flask app...
+2025-04-22 09:43:09,662 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:43:09,662 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:43:12,344 DEBUG: Handling index route
+2025-04-22 09:43:12,366 INFO: 127.0.0.1 - - [22/Apr/2025 09:43:12] "GET / HTTP/1.1" 200 -
+2025-04-22 09:43:16,707 DEBUG: Handling register route
+2025-04-22 09:43:16,737 INFO: 127.0.0.1 - - [22/Apr/2025 09:43:16] "GET /register HTTP/1.1" 200 -
+2025-04-22 09:43:41,583 DEBUG: Handling register route
+2025-04-22 09:43:42,307 DEBUG: Register attempt for username: Fayaz
+2025-04-22 09:43:42,962 INFO: 127.0.0.1 - - [22/Apr/2025 09:43:42] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-04-22 09:43:43,111 INFO: 127.0.0.1 - - [22/Apr/2025 09:43:43] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-22 09:43:43,112 INFO: 127.0.0.1 - - [22/Apr/2025 09:43:43] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-22 09:43:43,170 INFO: 127.0.0.1 - - [22/Apr/2025 09:43:43] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=AfxOMhArURERQMgu1jyK HTTP/1.1" 200 -
+2025-04-22 09:47:14,363 DEBUG: Script starting... Process ID: 10948
+2025-04-22 09:47:14,370 DEBUG: Loading environment variables...
+2025-04-22 09:47:14,392 DEBUG: FLASK_ENV: None
+2025-04-22 09:47:14,392 DEBUG: Creating Flask app...
+2025-04-22 09:47:14,458 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:47:14,459 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:47:14,459 DEBUG: Configuring Flask app...
+2025-04-22 09:47:14,462 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:47:14,465 DEBUG: Configuring Stripe...
+2025-04-22 09:47:14,466 DEBUG: Stripe configured successfully
+2025-04-22 09:47:14,468 DEBUG: Initializing Flask extensions...
+2025-04-22 09:47:14,650 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:47:14,651 DEBUG: Creating upload folder...
+2025-04-22 09:47:14,652 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:47:14,653 DEBUG: Defining models...
+2025-04-22 09:47:14,815 DEBUG: Models defined successfully
+2025-04-22 09:47:14,822 DEBUG: Defining forms...
+2025-04-22 09:47:14,827 DEBUG: Forms defined successfully
+2025-04-22 09:47:14,831 DEBUG: Setting up user loader...
+2025-04-22 09:47:14,838 DEBUG: Defining routes...
+2025-04-22 09:47:14,857 DEBUG: Routes defined successfully
+2025-04-22 09:47:14,857 DEBUG: Initializing database...
+2025-04-22 09:47:14,937 DEBUG: Database initialized successfully
+2025-04-22 09:47:14,939 DEBUG: Starting Flask app...
+2025-04-22 09:47:14,982 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:47:14,983 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:47:29,031 DEBUG: Script starting... Process ID: 12768
+2025-04-22 09:47:29,032 DEBUG: Loading environment variables...
+2025-04-22 09:47:29,033 DEBUG: FLASK_ENV: None
+2025-04-22 09:47:29,033 DEBUG: Creating Flask app...
+2025-04-22 09:47:29,037 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:47:29,037 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:47:29,038 DEBUG: Configuring Flask app...
+2025-04-22 09:47:29,039 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'postgresql://secure_sx88_user:I6Wdds9mxg256ADuFpii9QXP7SAIuZop@dpg-d03j2mje5dus73abjdu0-a.oregon-postgres.render.com/secure_sx88', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:47:29,040 DEBUG: Configuring Stripe...
+2025-04-22 09:47:29,041 DEBUG: Stripe configured successfully
+2025-04-22 09:47:29,041 DEBUG: Initializing Flask extensions...
+2025-04-22 09:47:29,088 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:47:29,088 DEBUG: Creating upload folder...
+2025-04-22 09:47:29,090 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:47:29,090 DEBUG: Defining models...
+2025-04-22 09:47:29,099 DEBUG: Models defined successfully
+2025-04-22 09:47:29,101 DEBUG: Defining forms...
+2025-04-22 09:47:29,102 DEBUG: Forms defined successfully
+2025-04-22 09:47:29,103 DEBUG: Setting up user loader...
+2025-04-22 09:47:29,104 DEBUG: Defining routes...
+2025-04-22 09:47:29,109 DEBUG: Routes defined successfully
+2025-04-22 09:47:29,110 DEBUG: Initializing database...
+2025-04-22 09:47:31,887 DEBUG: Database initialized successfully
+2025-04-22 09:47:31,990 DEBUG: Starting Flask app...
+2025-04-22 09:47:32,103 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:47:32,104 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:47:38,489 DEBUG: Handling index route
+2025-04-22 09:47:38,515 INFO: 127.0.0.1 - - [22/Apr/2025 09:47:38] "GET / HTTP/1.1" 200 -
+2025-04-22 09:47:45,338 DEBUG: Handling login route
+2025-04-22 09:47:45,411 INFO: 127.0.0.1 - - [22/Apr/2025 09:47:45] "GET /login HTTP/1.1" 200 -
+2025-04-22 09:47:48,074 DEBUG: Handling register route
+2025-04-22 09:47:48,128 INFO: 127.0.0.1 - - [22/Apr/2025 09:47:48] "GET /register HTTP/1.1" 200 -
+2025-04-22 09:48:31,928 DEBUG: Handling register route
+2025-04-22 09:48:32,343 DEBUG: Register attempt for username: fzs
+2025-04-22 09:48:32,955 INFO: 127.0.0.1 - - [22/Apr/2025 09:48:32] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-04-22 09:48:33,427 INFO: 127.0.0.1 - - [22/Apr/2025 09:48:33] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-22 09:48:33,428 INFO: 127.0.0.1 - - [22/Apr/2025 09:48:33] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-22 09:48:33,517 INFO: 127.0.0.1 - - [22/Apr/2025 09:48:33] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=6YQYiwRqhzN50c075WKO HTTP/1.1" 200 -
+2025-04-22 09:49:30,070 DEBUG: Script starting... Process ID: 12768
+2025-04-22 09:49:30,070 DEBUG: Loading environment variables...
+2025-04-22 09:49:30,072 DEBUG: FLASK_ENV: None
+2025-04-22 09:49:30,072 DEBUG: Creating Flask app...
+2025-04-22 09:49:30,075 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:49:30,076 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:49:30,076 DEBUG: Configuring Flask app...
+2025-04-22 09:49:30,077 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:49:30,078 DEBUG: Configuring Stripe...
+2025-04-22 09:49:30,079 DEBUG: Stripe configured successfully
+2025-04-22 09:49:30,080 DEBUG: Initializing Flask extensions...
+2025-04-22 09:49:30,152 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:49:30,153 DEBUG: Creating upload folder...
+2025-04-22 09:49:30,155 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:49:30,156 DEBUG: Defining models...
+2025-04-22 09:49:30,183 DEBUG: Models defined successfully
+2025-04-22 09:49:30,184 DEBUG: Defining forms...
+2025-04-22 09:49:30,186 DEBUG: Forms defined successfully
+2025-04-22 09:49:30,187 DEBUG: Setting up user loader...
+2025-04-22 09:49:30,188 DEBUG: Defining routes...
+2025-04-22 09:49:30,201 DEBUG: Routes defined successfully
+2025-04-22 09:49:30,202 DEBUG: Initializing database...
+2025-04-22 09:49:30,239 DEBUG: Database initialized successfully
+2025-04-22 09:49:30,240 DEBUG: Starting Flask app...
+2025-04-22 09:49:30,246 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:49:30,246 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:49:50,425 DEBUG: Script starting... Process ID: 27944
+2025-04-22 09:49:50,426 DEBUG: Loading environment variables...
+2025-04-22 09:49:50,427 DEBUG: FLASK_ENV: None
+2025-04-22 09:49:50,427 DEBUG: Creating Flask app...
+2025-04-22 09:49:50,429 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:49:50,430 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:49:50,430 DEBUG: Configuring Flask app...
+2025-04-22 09:49:50,430 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///app.db', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:49:50,430 DEBUG: Configuring Stripe...
+2025-04-22 09:49:50,431 DEBUG: Stripe configured successfully
+2025-04-22 09:49:50,431 DEBUG: Initializing Flask extensions...
+2025-04-22 09:49:50,459 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:49:50,460 DEBUG: Creating upload folder...
+2025-04-22 09:49:50,461 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:49:50,462 DEBUG: Defining models...
+2025-04-22 09:49:50,476 DEBUG: Models defined successfully
+2025-04-22 09:49:50,476 DEBUG: Defining forms...
+2025-04-22 09:49:50,477 DEBUG: Forms defined successfully
+2025-04-22 09:49:50,477 DEBUG: Setting up user loader...
+2025-04-22 09:49:50,478 DEBUG: Defining routes...
+2025-04-22 09:49:50,481 DEBUG: Routes defined successfully
+2025-04-22 09:49:50,481 DEBUG: Initializing database...
+2025-04-22 09:49:50,498 ERROR: Failed to initialize database: (sqlite3.OperationalError) no such column: config.free_website_access_limit
+[SQL: SELECT config.id AS config_id, config.free_image_limit AS config_free_image_limit, config.free_website_access_limit AS config_free_website_access_limit 
+FROM config
+ LIMIT ? OFFSET ?]
+[parameters: (1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: config.free_website_access_limit
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\shaik\Downloads\secure-main\secure-main\app.py", line 743, in <module>
+    if not Config.query.first():
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\orm\query.py", line 2728, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\orm\session.py", line 2362, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\orm\session.py", line 2247, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\shaik\AppData\Roaming\Python\Python312\site-packages\sqlalchemy\engine\default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: config.free_website_access_limit
+[SQL: SELECT config.id AS config_id, config.free_image_limit AS config_free_image_limit, config.free_website_access_limit AS config_free_website_access_limit 
+FROM config
+ LIMIT ? OFFSET ?]
+[parameters: (1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-04-22 09:51:25,505 DEBUG: Script starting... Process ID: 27336
+2025-04-22 09:51:25,506 DEBUG: Loading environment variables...
+2025-04-22 09:51:25,507 DEBUG: FLASK_ENV: None
+2025-04-22 09:51:25,507 DEBUG: Creating Flask app...
+2025-04-22 09:51:25,511 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:51:25,512 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:51:25,512 DEBUG: Configuring Flask app...
+2025-04-22 09:51:25,513 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///app.db', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:51:25,514 DEBUG: Configuring Stripe...
+2025-04-22 09:51:25,514 DEBUG: Stripe configured successfully
+2025-04-22 09:51:25,515 DEBUG: Initializing Flask extensions...
+2025-04-22 09:51:25,557 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:51:25,557 DEBUG: Creating upload folder...
+2025-04-22 09:51:25,558 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:51:25,558 DEBUG: Defining models...
+2025-04-22 09:51:25,566 DEBUG: Models defined successfully
+2025-04-22 09:51:25,567 DEBUG: Defining forms...
+2025-04-22 09:51:25,567 DEBUG: Forms defined successfully
+2025-04-22 09:51:25,567 DEBUG: Setting up user loader...
+2025-04-22 09:51:25,568 DEBUG: Defining routes...
+2025-04-22 09:51:25,571 DEBUG: Routes defined successfully
+2025-04-22 09:51:25,571 DEBUG: Initializing database...
+2025-04-22 09:51:25,627 DEBUG: Database initialized successfully
+2025-04-22 09:51:25,627 DEBUG: Starting Flask app...
+2025-04-22 09:51:25,700 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:51:25,701 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:51:29,282 DEBUG: Handling index route
+2025-04-22 09:51:29,356 INFO: 127.0.0.1 - - [22/Apr/2025 09:51:29] "GET / HTTP/1.1" 200 -
+2025-04-22 09:51:34,266 DEBUG: Handling register route
+2025-04-22 09:51:34,297 INFO: 127.0.0.1 - - [22/Apr/2025 09:51:34] "GET /register HTTP/1.1" 200 -
+2025-04-22 09:51:53,664 DEBUG: Handling register route
+2025-04-22 09:51:53,763 DEBUG: Register attempt for username: fzs
+2025-04-22 09:51:54,248 INFO: User registered: fzs
+2025-04-22 09:51:54,252 INFO: 127.0.0.1 - - [22/Apr/2025 09:51:54] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-22 09:51:54,275 DEBUG: Handling login route
+2025-04-22 09:51:54,294 INFO: 127.0.0.1 - - [22/Apr/2025 09:51:54] "GET /login HTTP/1.1" 200 -
+2025-04-22 09:52:06,626 DEBUG: Handling login route
+2025-04-22 09:52:06,630 DEBUG: Login attempt for email: fayaz@gmail.com
+2025-04-22 09:52:06,837 INFO: 127.0.0.1 - - [22/Apr/2025 09:52:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-22 09:52:06,861 DEBUG: Handling MFA verify route
+2025-04-22 09:52:06,882 INFO: User 1 logged in without MFA
+2025-04-22 09:52:06,884 INFO: 127.0.0.1 - - [22/Apr/2025 09:52:06] "[32mGET /mfa/verify HTTP/1.1[0m" 302 -
+2025-04-22 09:52:06,897 DEBUG: Loading user with ID: 1
+2025-04-22 09:52:06,900 DEBUG: Handling dashboard route for user 1
+2025-04-22 09:52:06,909 DEBUG: Checking premium status for user 1
+2025-04-22 09:52:06,945 INFO: 127.0.0.1 - - [22/Apr/2025 09:52:06] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 09:52:23,971 DEBUG: Loading user with ID: 1
+2025-04-22 09:52:23,976 DEBUG: Handling MFA setup route
+2025-04-22 09:52:25,180 INFO: 127.0.0.1 - - [22/Apr/2025 09:52:25] "GET /mfa/setup HTTP/1.1" 200 -
+2025-04-22 09:53:07,413 DEBUG: Loading user with ID: 1
+2025-04-22 09:53:07,417 DEBUG: Handling MFA setup route
+2025-04-22 09:53:07,419 DEBUG: Verifying MFA token for user 1
+2025-04-22 09:53:07,448 INFO: MFA enabled for user 1
+2025-04-22 09:53:07,450 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:07] "[32mPOST /mfa/setup HTTP/1.1[0m" 302 -
+2025-04-22 09:53:07,477 DEBUG: Loading user with ID: 1
+2025-04-22 09:53:07,488 DEBUG: Handling dashboard route for user 1
+2025-04-22 09:53:07,500 DEBUG: Checking premium status for user 1
+2025-04-22 09:53:07,512 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:07] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 09:53:10,877 DEBUG: Loading user with ID: 1
+2025-04-22 09:53:10,880 DEBUG: Handling logout route
+2025-04-22 09:53:10,880 INFO: User 1 logged out
+2025-04-22 09:53:10,882 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-22 09:53:10,900 DEBUG: Handling index route
+2025-04-22 09:53:10,920 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:10] "GET / HTTP/1.1" 200 -
+2025-04-22 09:53:12,176 DEBUG: Handling login route
+2025-04-22 09:53:12,178 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:12] "GET /login HTTP/1.1" 200 -
+2025-04-22 09:53:20,750 DEBUG: Handling login route
+2025-04-22 09:53:20,753 DEBUG: Login attempt for email: fayaz@gmail.com
+2025-04-22 09:53:21,017 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-22 09:53:21,025 DEBUG: Handling MFA verify route
+2025-04-22 09:53:21,035 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:21] "GET /mfa/verify HTTP/1.1" 200 -
+2025-04-22 09:53:27,267 DEBUG: Handling MFA verify route
+2025-04-22 09:53:27,271 DEBUG: Verifying MFA token for user 1
+2025-04-22 09:53:27,295 INFO: MFA verified for user 1
+2025-04-22 09:53:27,298 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:27] "[32mPOST /mfa/verify HTTP/1.1[0m" 302 -
+2025-04-22 09:53:27,315 DEBUG: Loading user with ID: 1
+2025-04-22 09:53:27,318 DEBUG: Handling dashboard route for user 1
+2025-04-22 09:53:27,328 DEBUG: Checking premium status for user 1
+2025-04-22 09:53:27,336 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:27] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 09:53:38,628 DEBUG: Loading user with ID: 1
+2025-04-22 09:53:38,632 DEBUG: Handling embedded website route for user 1
+2025-04-22 09:53:38,633 DEBUG: Session data: <SecureCookieSession {'_fresh': True, '_id': 'ad647e1acc2f9f4ac20ee7d20bad7b535aaa7511ddc56eb79e2edf6c1397aca0ee3ed82d985d1343a22e72ae99c1ce82292117b39154286b1f63787c1c9143e6', '_user_id': '1', 'csrf_token': 'e8ea6303020cf19c61a3c52347dd3af4e7afda64'}>
+2025-04-22 09:53:38,634 DEBUG: Checking premium status for user 1
+2025-04-22 09:53:38,640 DEBUG: User 1 access count: 0, is_premium: False
+2025-04-22 09:53:38,679 DEBUG: Starting new HTTPS connection (1): imagetamperingdetection.streamlit.app:443
+2025-04-22 09:53:39,713 DEBUG: https://imagetamperingdetection.streamlit.app:443 "HEAD /?embedded=true HTTP/11" 200 0
+2025-04-22 09:53:39,717 DEBUG: Response headers: {'Server': 'nginx/1.27.4', 'Date': 'Tue, 22 Apr 2025 14:53:39 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '4271', 'accept-ranges': 'bytes', 'cache-control': 'public, max-age=0, must-revalidate', 'last-modified': 'Tue, 15 Apr 2025 12:09:20 GMT', 'set-cookie': 'streamlit_session=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax, proxy-tracking-id=6o3y6ms09tnr8oopbpfjdbz79lxze641; Path=/; Max-Age=2678400; HttpOnly; Secure; SameSite=Lax', 'x-content-type-options': 'nosniff', 'Via': '1.1 google', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-04-22 09:53:39,718 DEBUG: X-Frame-Options: 
+2025-04-22 09:53:39,719 DEBUG: Checking website access: count=0, limit=5
+2025-04-22 09:53:39,720 DEBUG: Checking website access for user 1, current count: 0
+2025-04-22 09:53:39,724 DEBUG: Checking premium status for user 1
+2025-04-22 09:53:39,757 INFO: Website access granted for user 1, new count: 1
+2025-04-22 09:53:39,758 DEBUG: Checking premium status for user 1
+2025-04-22 09:53:39,775 INFO: 127.0.0.1 - - [22/Apr/2025 09:53:39] "GET /embedded-website HTTP/1.1" 200 -
+2025-04-22 09:55:19,746 DEBUG: Loading user with ID: 1
+2025-04-22 09:55:19,752 DEBUG: Handling subscription route for user 1
+2025-04-22 09:55:19,754 DEBUG: Checking premium status for user 1
+2025-04-22 09:55:19,798 INFO: 127.0.0.1 - - [22/Apr/2025 09:55:19] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 09:55:30,225 DEBUG: Loading user with ID: 1
+2025-04-22 09:55:30,230 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Weekly')])
+2025-04-22 09:55:30,231 DEBUG: Selected plan: Weekly
+2025-04-22 09:55:30,232 DEBUG: Checking premium status for user 1
+2025-04-22 09:55:30,511 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 09:55:30,512 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=499&line_items[0][price_data][product_data][name]=Weekly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FWeekly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Weekly
+2025-04-22 09:55:30,515 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 09:55:31,762 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 200 2682
+2025-04-22 09:55:31,767 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2025-04-22 09:55:31,767 DEBUG: body='{\n  "id": "cs_test_a121PGKUjVa5IraFDXlxJlZJ3FEJf9BLOy6lD6SeZhuaSeiptZoUJNrARA",\n  "object": "checkout.session",\n  "adaptive_pricing": {\n    "enabled": true\n  },\n  "after_expiration": null,\n  "allow_promotion_codes": null,\n  "amount_subtotal": 499,\n  "amount_total": 499,\n  "automatic_tax": {\n    "enabled": false,\n    "liability": null,\n    "provider": null,\n    "status": null\n  },\n  "billing_address_collection": null,\n  "cancel_url": "http://127.0.0.1:5000/subscription",\n  "client_reference_id": null,\n  "client_secret": null,\n  "collected_information": null,\n  "consent": null,\n  "consent_collection": null,\n  "created": 1745333731,\n  "currency": "usd",\n  "currency_conversion": null,\n  "custom_fields": [],\n  "custom_text": {\n    "after_submit": null,\n    "shipping_address": null,\n    "submit": null,\n    "terms_of_service_acceptance": null\n  },\n  "customer": null,\n  "customer_creation": "if_required",\n  "customer_details": null,\n  "customer_email": null,\n  "discounts": [],\n  "expires_at": 1745420131,\n  "invoice": null,\n  "invoice_creation": {\n    "enabled": false,\n    "invoice_data": {\n      "account_tax_ids": null,\n      "custom_fields": null,\n      "description": null,\n      "footer": null,\n      "issuer": null,\n      "metadata": {},\n      "rendering_options": null\n    }\n  },\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n    "plan_name": "Weekly",\n    "user_id": "1"\n  },\n  "mode": "payment",\n  "payment_intent": null,\n  "payment_link": null,\n  "payment_method_collection": "if_required",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "permissions": null,\n  "phone_number_collection": {\n    "enabled": false\n  },\n  "recovered_from": null,\n  "saved_payment_method_options": null,\n  "setup_intent": null,\n  "shipping_address_collection": null,\n  "shipping_cost": null,\n  "shipping_details": null,\n  "shipping_options": [],\n  "status": "open",\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "http://127.0.0.1:5000/subscribe-success/Weekly",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_shipping": 0,\n    "amount_tax": 0\n  },\n  "ui_mode": "hosted",\n  "url": "https://checkout.stripe.com/c/pay/cs_test_a121PGKUjVa5IraFDXlxJlZJ3FEJf9BLOy6lD6SeZhuaSeiptZoUJNrARA#fidkdWxOYHwnPyd1blpxYHZxWjA0V0Y0V2tXRGdqTn02UnJ1akt3TWJySEdKYk9ARj1qUlxQckpSNkF%2FV3JGXVN0TFFUXGpvPX1CdjFofH09QHZsU2AwRGBIaDdddE1qU09RR0hyVWBPc1VdNTVON29vN39IUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",\n  "wallet_options": null\n}' message='API response body'
+2025-04-22 09:55:31,775 DEBUG: link=https://dashboard.stripe.com/test/logs/req_S3sjLh6MbFLncG message='Dashboard link for request'
+2025-04-22 09:55:31,880 INFO: Created checkout session: cs_test_a121PGKUjVa5IraFDXlxJlZJ3FEJf9BLOy6lD6SeZhuaSeiptZoUJNrARA
+2025-04-22 09:55:31,884 INFO: 127.0.0.1 - - [22/Apr/2025 09:55:31] "POST /create-checkout-session HTTP/1.1" 200 -
+2025-04-22 09:59:20,709 DEBUG: Script starting... Process ID: 27336
+2025-04-22 09:59:20,743 DEBUG: Loading environment variables...
+2025-04-22 09:59:20,783 DEBUG: FLASK_ENV: None
+2025-04-22 09:59:20,785 DEBUG: Creating Flask app...
+2025-04-22 09:59:20,920 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:59:20,921 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:59:20,921 DEBUG: Configuring Flask app...
+2025-04-22 09:59:20,926 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:59:20,927 DEBUG: Configuring Stripe...
+2025-04-22 09:59:20,928 DEBUG: Stripe configured successfully
+2025-04-22 09:59:20,929 DEBUG: Initializing Flask extensions...
+2025-04-22 09:59:21,078 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:59:21,078 DEBUG: Creating upload folder...
+2025-04-22 09:59:21,080 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:59:21,080 DEBUG: Defining models...
+2025-04-22 09:59:21,256 DEBUG: Models defined successfully
+2025-04-22 09:59:21,257 DEBUG: Defining forms...
+2025-04-22 09:59:21,264 DEBUG: Forms defined successfully
+2025-04-22 09:59:21,264 DEBUG: Setting up user loader...
+2025-04-22 09:59:21,267 DEBUG: Defining routes...
+2025-04-22 09:59:21,291 DEBUG: Routes defined successfully
+2025-04-22 09:59:21,291 DEBUG: Initializing database...
+2025-04-22 09:59:21,438 DEBUG: Database initialized successfully
+2025-04-22 09:59:21,440 DEBUG: Starting Flask app...
+2025-04-22 09:59:21,549 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:59:21,549 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:59:33,023 DEBUG: Script starting... Process ID: 18080
+2025-04-22 09:59:33,024 DEBUG: Loading environment variables...
+2025-04-22 09:59:33,026 DEBUG: FLASK_ENV: None
+2025-04-22 09:59:33,026 DEBUG: Creating Flask app...
+2025-04-22 09:59:33,031 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 09:59:33,032 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 09:59:33,032 DEBUG: Configuring Flask app...
+2025-04-22 09:59:33,033 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///app.db', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 09:59:33,034 DEBUG: Configuring Stripe...
+2025-04-22 09:59:33,035 DEBUG: Stripe configured successfully
+2025-04-22 09:59:33,035 DEBUG: Initializing Flask extensions...
+2025-04-22 09:59:33,103 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 09:59:33,103 DEBUG: Creating upload folder...
+2025-04-22 09:59:33,104 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 09:59:33,104 DEBUG: Defining models...
+2025-04-22 09:59:33,122 DEBUG: Models defined successfully
+2025-04-22 09:59:33,123 DEBUG: Defining forms...
+2025-04-22 09:59:33,124 DEBUG: Forms defined successfully
+2025-04-22 09:59:33,125 DEBUG: Setting up user loader...
+2025-04-22 09:59:33,125 DEBUG: Defining routes...
+2025-04-22 09:59:33,137 DEBUG: Routes defined successfully
+2025-04-22 09:59:33,137 DEBUG: Initializing database...
+2025-04-22 09:59:33,166 DEBUG: Database initialized successfully
+2025-04-22 09:59:33,166 DEBUG: Starting Flask app...
+2025-04-22 09:59:33,249 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 09:59:33,250 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 09:59:46,328 DEBUG: Handling index route
+2025-04-22 09:59:46,335 DEBUG: Loading user with ID: 1
+2025-04-22 09:59:46,351 INFO: 127.0.0.1 - - [22/Apr/2025 09:59:46] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-22 09:59:46,414 DEBUG: Loading user with ID: 1
+2025-04-22 09:59:46,428 DEBUG: Handling dashboard route for user 1
+2025-04-22 09:59:46,452 DEBUG: Checking premium status for user 1
+2025-04-22 09:59:46,487 INFO: 127.0.0.1 - - [22/Apr/2025 09:59:46] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 09:59:50,453 DEBUG: Loading user with ID: 1
+2025-04-22 09:59:50,458 DEBUG: Handling subscription route for user 1
+2025-04-22 09:59:50,459 DEBUG: Checking premium status for user 1
+2025-04-22 09:59:50,485 INFO: 127.0.0.1 - - [22/Apr/2025 09:59:50] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 09:59:54,577 DEBUG: Loading user with ID: 1
+2025-04-22 09:59:54,581 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Weekly')])
+2025-04-22 09:59:54,582 DEBUG: Selected plan: Weekly
+2025-04-22 09:59:54,583 DEBUG: Checking premium status for user 1
+2025-04-22 09:59:54,711 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 09:59:54,712 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=499&line_items[0][price_data][product_data][name]=Weekly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FWeekly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Weekly
+2025-04-22 09:59:54,723 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 09:59:55,837 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 200 2682
+2025-04-22 09:59:55,838 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2025-04-22 09:59:55,839 DEBUG: body='{\n  "id": "cs_test_a1leFeLLaXUGJThaXIr5wpzzkSgzSmDHAXtIZAaNyCI2IBfIWrCQnhQ9Me",\n  "object": "checkout.session",\n  "adaptive_pricing": {\n    "enabled": true\n  },\n  "after_expiration": null,\n  "allow_promotion_codes": null,\n  "amount_subtotal": 499,\n  "amount_total": 499,\n  "automatic_tax": {\n    "enabled": false,\n    "liability": null,\n    "provider": null,\n    "status": null\n  },\n  "billing_address_collection": null,\n  "cancel_url": "http://127.0.0.1:5000/subscription",\n  "client_reference_id": null,\n  "client_secret": null,\n  "collected_information": null,\n  "consent": null,\n  "consent_collection": null,\n  "created": 1745333995,\n  "currency": "usd",\n  "currency_conversion": null,\n  "custom_fields": [],\n  "custom_text": {\n    "after_submit": null,\n    "shipping_address": null,\n    "submit": null,\n    "terms_of_service_acceptance": null\n  },\n  "customer": null,\n  "customer_creation": "if_required",\n  "customer_details": null,\n  "customer_email": null,\n  "discounts": [],\n  "expires_at": 1745420395,\n  "invoice": null,\n  "invoice_creation": {\n    "enabled": false,\n    "invoice_data": {\n      "account_tax_ids": null,\n      "custom_fields": null,\n      "description": null,\n      "footer": null,\n      "issuer": null,\n      "metadata": {},\n      "rendering_options": null\n    }\n  },\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n    "plan_name": "Weekly",\n    "user_id": "1"\n  },\n  "mode": "payment",\n  "payment_intent": null,\n  "payment_link": null,\n  "payment_method_collection": "if_required",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "permissions": null,\n  "phone_number_collection": {\n    "enabled": false\n  },\n  "recovered_from": null,\n  "saved_payment_method_options": null,\n  "setup_intent": null,\n  "shipping_address_collection": null,\n  "shipping_cost": null,\n  "shipping_details": null,\n  "shipping_options": [],\n  "status": "open",\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "http://127.0.0.1:5000/subscribe-success/Weekly",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_shipping": 0,\n    "amount_tax": 0\n  },\n  "ui_mode": "hosted",\n  "url": "https://checkout.stripe.com/c/pay/cs_test_a1leFeLLaXUGJThaXIr5wpzzkSgzSmDHAXtIZAaNyCI2IBfIWrCQnhQ9Me#fidkdWxOYHwnPyd1blpxYHZxWjA0V0Y0V2tXRGdqTn02UnJ1akt3TWJySEdKYk9ARj1qUlxQckpSNkF%2FV3JGXVN0TFFUXGpvPX1CdjFofH09QHZsU2AwRGBIaDdddE1qU09RR0hyVWBPc1VdNTVON29vN39IUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",\n  "wallet_options": null\n}' message='API response body'
+2025-04-22 09:59:55,840 DEBUG: link=https://dashboard.stripe.com/test/logs/req_b18Fp1XnrJCprk message='Dashboard link for request'
+2025-04-22 09:59:55,849 INFO: Created checkout session: cs_test_a1leFeLLaXUGJThaXIr5wpzzkSgzSmDHAXtIZAaNyCI2IBfIWrCQnhQ9Me
+2025-04-22 09:59:55,851 INFO: 127.0.0.1 - - [22/Apr/2025 09:59:55] "POST /create-checkout-session HTTP/1.1" 200 -
+2025-04-22 10:00:45,245 DEBUG: Script starting... Process ID: 18080
+2025-04-22 10:00:45,256 DEBUG: Loading environment variables...
+2025-04-22 10:00:45,270 DEBUG: FLASK_ENV: None
+2025-04-22 10:00:45,271 DEBUG: Creating Flask app...
+2025-04-22 10:00:45,323 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:00:45,324 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:00:45,324 DEBUG: Configuring Flask app...
+2025-04-22 10:00:45,326 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:00:45,326 DEBUG: Configuring Stripe...
+2025-04-22 10:00:45,326 DEBUG: Stripe configured successfully
+2025-04-22 10:00:45,326 DEBUG: Initializing Flask extensions...
+2025-04-22 10:00:45,365 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:00:45,366 DEBUG: Creating upload folder...
+2025-04-22 10:00:45,367 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:00:45,369 DEBUG: Defining models...
+2025-04-22 10:00:45,409 DEBUG: Models defined successfully
+2025-04-22 10:00:45,410 DEBUG: Defining forms...
+2025-04-22 10:00:45,412 DEBUG: Forms defined successfully
+2025-04-22 10:00:45,413 DEBUG: Setting up user loader...
+2025-04-22 10:00:45,413 DEBUG: Defining routes...
+2025-04-22 10:00:45,421 DEBUG: Routes defined successfully
+2025-04-22 10:00:45,422 DEBUG: Initializing database...
+2025-04-22 10:00:45,491 DEBUG: Database initialized successfully
+2025-04-22 10:00:45,492 DEBUG: Starting Flask app...
+2025-04-22 10:00:45,518 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:00:45,519 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:00:52,589 DEBUG: Handling index route
+2025-04-22 10:00:52,592 DEBUG: Loading user with ID: 1
+2025-04-22 10:00:52,696 INFO: 127.0.0.1 - - [22/Apr/2025 10:00:52] "GET / HTTP/1.1" 200 -
+2025-04-22 10:00:55,413 DEBUG: Handling login route
+2025-04-22 10:00:55,413 DEBUG: Loading user with ID: 1
+2025-04-22 10:00:55,447 INFO: 127.0.0.1 - - [22/Apr/2025 10:00:55] "GET /login HTTP/1.1" 200 -
+2025-04-22 10:01:00,118 DEBUG: Handling login route
+2025-04-22 10:01:00,120 DEBUG: Loading user with ID: 1
+2025-04-22 10:01:00,318 DEBUG: Login attempt for email: fayaz@gmail.com
+2025-04-22 10:01:00,325 WARNING: Failed login attempt for email: fayaz@gmail.com
+2025-04-22 10:01:00,330 INFO: 127.0.0.1 - - [22/Apr/2025 10:01:00] "POST /login HTTP/1.1" 200 -
+2025-04-22 10:01:13,089 DEBUG: Handling login route
+2025-04-22 10:01:13,090 DEBUG: Loading user with ID: 1
+2025-04-22 10:01:13,095 DEBUG: Login attempt for email: fz@gmail.com
+2025-04-22 10:01:13,098 WARNING: Failed login attempt for email: fz@gmail.com
+2025-04-22 10:01:13,106 INFO: 127.0.0.1 - - [22/Apr/2025 10:01:13] "POST /login HTTP/1.1" 200 -
+2025-04-22 10:04:26,921 DEBUG: Script starting... Process ID: 16712
+2025-04-22 10:04:26,924 DEBUG: Loading environment variables...
+2025-04-22 10:04:26,925 DEBUG: FLASK_ENV: None
+2025-04-22 10:04:26,925 DEBUG: Creating Flask app...
+2025-04-22 10:04:26,933 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:04:26,934 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:04:26,934 DEBUG: Configuring Flask app...
+2025-04-22 10:04:26,935 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///app.db', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:04:26,936 DEBUG: Configuring Stripe...
+2025-04-22 10:04:26,936 DEBUG: Stripe configured successfully
+2025-04-22 10:04:26,937 DEBUG: Initializing Flask extensions...
+2025-04-22 10:04:27,012 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:04:27,012 DEBUG: Creating upload folder...
+2025-04-22 10:04:27,014 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:04:27,014 DEBUG: Defining models...
+2025-04-22 10:04:27,027 DEBUG: Models defined successfully
+2025-04-22 10:04:27,028 DEBUG: Defining forms...
+2025-04-22 10:04:27,028 DEBUG: Forms defined successfully
+2025-04-22 10:04:27,029 DEBUG: Setting up user loader...
+2025-04-22 10:04:27,029 DEBUG: Defining routes...
+2025-04-22 10:04:27,037 DEBUG: Routes defined successfully
+2025-04-22 10:04:27,037 DEBUG: Initializing database...
+2025-04-22 10:04:27,069 DEBUG: Database initialized successfully
+2025-04-22 10:04:27,070 DEBUG: Starting Flask app...
+2025-04-22 10:04:27,160 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:04:27,160 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:04:34,275 DEBUG: Handling index route
+2025-04-22 10:04:34,278 DEBUG: Loading user with ID: 1
+2025-04-22 10:04:34,303 INFO: 127.0.0.1 - - [22/Apr/2025 10:04:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-22 10:04:34,327 DEBUG: Loading user with ID: 1
+2025-04-22 10:04:34,331 DEBUG: Handling dashboard route for user 1
+2025-04-22 10:04:34,346 DEBUG: Checking premium status for user 1
+2025-04-22 10:04:34,388 INFO: 127.0.0.1 - - [22/Apr/2025 10:04:34] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 10:04:42,352 DEBUG: Loading user with ID: 1
+2025-04-22 10:04:42,354 DEBUG: Handling subscription route for user 1
+2025-04-22 10:04:42,355 DEBUG: Checking premium status for user 1
+2025-04-22 10:04:42,383 INFO: 127.0.0.1 - - [22/Apr/2025 10:04:42] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 10:04:44,690 DEBUG: Loading user with ID: 1
+2025-04-22 10:04:44,694 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Weekly')])
+2025-04-22 10:04:44,696 DEBUG: Selected plan: Weekly
+2025-04-22 10:04:44,698 DEBUG: Checking premium status for user 1
+2025-04-22 10:04:44,839 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:04:44,839 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=10&line_items[0][price_data][product_data][name]=Weekly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FWeekly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Weekly
+2025-04-22 10:04:44,851 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:04:46,139 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 400 349
+2025-04-22 10:04:46,142 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2025-04-22 10:04:46,143 DEBUG: body='{\n  "error": {\n    "code": "amount_too_small",\n    "doc_url": "https://stripe.com/docs/error-codes/amount-too-small",\n    "message": "The Checkout Session\'s total amount due must add up to at least $0.50 usd",\n    "request_log_url": "https://dashboard.stripe.com/test/logs/req_GpY2MHezZwn6KC?t=1745334285",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2025-04-22 10:04:46,145 DEBUG: link=https://dashboard.stripe.com/test/logs/req_GpY2MHezZwn6KC message='Dashboard link for request'
+2025-04-22 10:04:46,146 INFO: error_code=amount_too_small error_message="The Checkout Session's total amount due must add up to at least $0.50 usd" error_param=None error_type=invalid_request_error message='Stripe API error received'
+2025-04-22 10:04:46,148 ERROR: Stripe error: Request req_GpY2MHezZwn6KC: The Checkout Session's total amount due must add up to at least $0.50 usd
+2025-04-22 10:04:46,156 INFO: 127.0.0.1 - - [22/Apr/2025 10:04:46] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+2025-04-22 10:04:52,892 DEBUG: Loading user with ID: 1
+2025-04-22 10:04:52,895 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Weekly')])
+2025-04-22 10:04:52,895 DEBUG: Selected plan: Weekly
+2025-04-22 10:04:52,895 DEBUG: Checking premium status for user 1
+2025-04-22 10:04:52,898 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:04:52,898 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=10&line_items[0][price_data][product_data][name]=Weekly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FWeekly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Weekly
+2025-04-22 10:04:52,905 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:04:53,922 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 400 349
+2025-04-22 10:04:53,923 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2025-04-22 10:04:53,924 DEBUG: body='{\n  "error": {\n    "code": "amount_too_small",\n    "doc_url": "https://stripe.com/docs/error-codes/amount-too-small",\n    "message": "The Checkout Session\'s total amount due must add up to at least $0.50 usd",\n    "request_log_url": "https://dashboard.stripe.com/test/logs/req_SXjvj4sLii69gX?t=1745334293",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2025-04-22 10:04:53,924 DEBUG: link=https://dashboard.stripe.com/test/logs/req_SXjvj4sLii69gX message='Dashboard link for request'
+2025-04-22 10:04:53,924 INFO: error_code=amount_too_small error_message="The Checkout Session's total amount due must add up to at least $0.50 usd" error_param=None error_type=invalid_request_error message='Stripe API error received'
+2025-04-22 10:04:53,926 ERROR: Stripe error: Request req_SXjvj4sLii69gX: The Checkout Session's total amount due must add up to at least $0.50 usd
+2025-04-22 10:04:53,927 INFO: 127.0.0.1 - - [22/Apr/2025 10:04:53] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+2025-04-22 10:07:09,563 DEBUG: Script starting... Process ID: 16712
+2025-04-22 10:07:09,566 DEBUG: Loading environment variables...
+2025-04-22 10:07:09,576 DEBUG: FLASK_ENV: None
+2025-04-22 10:07:09,576 DEBUG: Creating Flask app...
+2025-04-22 10:07:09,595 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:07:09,596 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:07:09,596 DEBUG: Configuring Flask app...
+2025-04-22 10:07:09,598 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpeg', 'jpg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:07:09,600 DEBUG: Configuring Stripe...
+2025-04-22 10:07:09,601 DEBUG: Stripe configured successfully
+2025-04-22 10:07:09,601 DEBUG: Initializing Flask extensions...
+2025-04-22 10:07:09,625 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:07:09,626 DEBUG: Creating upload folder...
+2025-04-22 10:07:09,627 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:07:09,628 DEBUG: Defining models...
+2025-04-22 10:07:09,656 DEBUG: Models defined successfully
+2025-04-22 10:07:09,657 DEBUG: Defining forms...
+2025-04-22 10:07:09,658 DEBUG: Forms defined successfully
+2025-04-22 10:07:09,659 DEBUG: Setting up user loader...
+2025-04-22 10:07:09,659 DEBUG: Defining routes...
+2025-04-22 10:07:09,668 DEBUG: Routes defined successfully
+2025-04-22 10:07:09,668 DEBUG: Initializing database...
+2025-04-22 10:07:09,760 DEBUG: Database initialized successfully
+2025-04-22 10:07:09,761 DEBUG: Starting Flask app...
+2025-04-22 10:07:09,775 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:07:09,776 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:07:21,255 DEBUG: Script starting... Process ID: 28668
+2025-04-22 10:07:21,256 DEBUG: Loading environment variables...
+2025-04-22 10:07:21,257 DEBUG: FLASK_ENV: None
+2025-04-22 10:07:21,258 DEBUG: Creating Flask app...
+2025-04-22 10:07:21,261 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:07:21,261 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:07:21,262 DEBUG: Configuring Flask app...
+2025-04-22 10:07:21,263 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///app.db', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:07:21,263 DEBUG: Configuring Stripe...
+2025-04-22 10:07:21,264 DEBUG: Stripe configured successfully
+2025-04-22 10:07:21,264 DEBUG: Initializing Flask extensions...
+2025-04-22 10:07:21,318 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:07:21,318 DEBUG: Creating upload folder...
+2025-04-22 10:07:21,322 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:07:21,324 DEBUG: Defining models...
+2025-04-22 10:07:21,347 DEBUG: Models defined successfully
+2025-04-22 10:07:21,347 DEBUG: Defining forms...
+2025-04-22 10:07:21,348 DEBUG: Forms defined successfully
+2025-04-22 10:07:21,348 DEBUG: Setting up user loader...
+2025-04-22 10:07:21,349 DEBUG: Defining routes...
+2025-04-22 10:07:21,352 DEBUG: Routes defined successfully
+2025-04-22 10:07:21,353 DEBUG: Initializing database...
+2025-04-22 10:07:21,371 DEBUG: Database initialized successfully
+2025-04-22 10:07:21,373 DEBUG: Starting Flask app...
+2025-04-22 10:07:21,483 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:07:21,484 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:07:23,824 DEBUG: Handling index route
+2025-04-22 10:07:23,826 DEBUG: Loading user with ID: 1
+2025-04-22 10:07:23,850 INFO: 127.0.0.1 - - [22/Apr/2025 10:07:23] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-22 10:07:23,972 DEBUG: Loading user with ID: 1
+2025-04-22 10:07:23,982 DEBUG: Handling dashboard route for user 1
+2025-04-22 10:07:24,015 DEBUG: Checking premium status for user 1
+2025-04-22 10:07:24,062 INFO: 127.0.0.1 - - [22/Apr/2025 10:07:24] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 10:07:28,173 DEBUG: Loading user with ID: 1
+2025-04-22 10:07:28,177 DEBUG: Handling subscription route for user 1
+2025-04-22 10:07:28,178 DEBUG: Checking premium status for user 1
+2025-04-22 10:07:28,209 INFO: 127.0.0.1 - - [22/Apr/2025 10:07:28] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 10:07:31,206 DEBUG: Loading user with ID: 1
+2025-04-22 10:07:31,209 DEBUG: Handling subscription route for user 1
+2025-04-22 10:07:31,210 DEBUG: Checking premium status for user 1
+2025-04-22 10:07:31,222 INFO: 127.0.0.1 - - [22/Apr/2025 10:07:31] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 10:07:39,846 DEBUG: Loading user with ID: 1
+2025-04-22 10:07:39,852 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Weekly')])
+2025-04-22 10:07:39,853 DEBUG: Selected plan: Weekly
+2025-04-22 10:07:39,855 DEBUG: Checking premium status for user 1
+2025-04-22 10:07:39,973 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:07:39,974 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=10&line_items[0][price_data][product_data][name]=Weekly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FWeekly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Weekly
+2025-04-22 10:07:39,985 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:07:41,039 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 400 349
+2025-04-22 10:07:41,040 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2025-04-22 10:07:41,041 DEBUG: body='{\n  "error": {\n    "code": "amount_too_small",\n    "doc_url": "https://stripe.com/docs/error-codes/amount-too-small",\n    "message": "The Checkout Session\'s total amount due must add up to at least $0.50 usd",\n    "request_log_url": "https://dashboard.stripe.com/test/logs/req_cS8llH7x9zlhBS?t=1745334460",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2025-04-22 10:07:41,042 DEBUG: link=https://dashboard.stripe.com/test/logs/req_cS8llH7x9zlhBS message='Dashboard link for request'
+2025-04-22 10:07:41,042 INFO: error_code=amount_too_small error_message="The Checkout Session's total amount due must add up to at least $0.50 usd" error_param=None error_type=invalid_request_error message='Stripe API error received'
+2025-04-22 10:07:41,044 ERROR: Stripe error: Request req_cS8llH7x9zlhBS: The Checkout Session's total amount due must add up to at least $0.50 usd
+2025-04-22 10:07:41,045 INFO: 127.0.0.1 - - [22/Apr/2025 10:07:41] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+2025-04-22 10:09:52,994 DEBUG: Script starting... Process ID: 28668
+2025-04-22 10:09:52,994 DEBUG: Loading environment variables...
+2025-04-22 10:09:52,996 DEBUG: FLASK_ENV: None
+2025-04-22 10:09:52,997 DEBUG: Creating Flask app...
+2025-04-22 10:09:53,004 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:09:53,005 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:09:53,006 DEBUG: Configuring Flask app...
+2025-04-22 10:09:53,006 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:09:53,008 DEBUG: Configuring Stripe...
+2025-04-22 10:09:53,008 DEBUG: Stripe configured successfully
+2025-04-22 10:09:53,010 DEBUG: Initializing Flask extensions...
+2025-04-22 10:09:53,024 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:09:53,026 DEBUG: Creating upload folder...
+2025-04-22 10:09:53,028 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:09:53,029 DEBUG: Defining models...
+2025-04-22 10:09:53,082 DEBUG: Models defined successfully
+2025-04-22 10:09:53,084 DEBUG: Defining forms...
+2025-04-22 10:09:53,085 DEBUG: Forms defined successfully
+2025-04-22 10:09:53,086 DEBUG: Setting up user loader...
+2025-04-22 10:09:53,087 DEBUG: Defining routes...
+2025-04-22 10:09:53,097 DEBUG: Routes defined successfully
+2025-04-22 10:09:53,099 DEBUG: Initializing database...
+2025-04-22 10:09:53,140 DEBUG: Database initialized successfully
+2025-04-22 10:09:53,142 DEBUG: Starting Flask app...
+2025-04-22 10:09:53,157 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:09:53,158 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:10:03,979 DEBUG: Script starting... Process ID: 22264
+2025-04-22 10:10:03,980 DEBUG: Loading environment variables...
+2025-04-22 10:10:03,981 DEBUG: FLASK_ENV: None
+2025-04-22 10:10:03,982 DEBUG: Creating Flask app...
+2025-04-22 10:10:03,984 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:10:03,984 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:10:03,985 DEBUG: Configuring Flask app...
+2025-04-22 10:10:03,985 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:10:03,987 DEBUG: Configuring Stripe...
+2025-04-22 10:10:03,987 DEBUG: Stripe configured successfully
+2025-04-22 10:10:03,988 DEBUG: Initializing Flask extensions...
+2025-04-22 10:10:04,072 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:10:04,073 DEBUG: Creating upload folder...
+2025-04-22 10:10:04,074 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:10:04,074 DEBUG: Defining models...
+2025-04-22 10:10:04,084 DEBUG: Models defined successfully
+2025-04-22 10:10:04,084 DEBUG: Defining forms...
+2025-04-22 10:10:04,084 DEBUG: Forms defined successfully
+2025-04-22 10:10:04,084 DEBUG: Setting up user loader...
+2025-04-22 10:10:04,084 DEBUG: Defining routes...
+2025-04-22 10:10:04,093 DEBUG: Routes defined successfully
+2025-04-22 10:10:04,093 DEBUG: Initializing database...
+2025-04-22 10:10:04,118 DEBUG: Database initialized successfully
+2025-04-22 10:10:04,118 DEBUG: Starting Flask app...
+2025-04-22 10:10:04,249 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:10:04,250 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:10:08,592 DEBUG: Handling index route
+2025-04-22 10:10:08,594 DEBUG: Loading user with ID: 1
+2025-04-22 10:10:08,626 INFO: 127.0.0.1 - - [22/Apr/2025 10:10:08] "GET / HTTP/1.1" 200 -
+2025-04-22 10:10:11,533 DEBUG: Handling login route
+2025-04-22 10:10:11,535 DEBUG: Loading user with ID: 1
+2025-04-22 10:10:11,555 INFO: 127.0.0.1 - - [22/Apr/2025 10:10:11] "GET /login HTTP/1.1" 200 -
+2025-04-22 10:10:21,332 DEBUG: Handling register route
+2025-04-22 10:10:21,336 DEBUG: Loading user with ID: 1
+2025-04-22 10:10:21,401 INFO: 127.0.0.1 - - [22/Apr/2025 10:10:21] "GET /register HTTP/1.1" 200 -
+2025-04-22 10:11:30,306 DEBUG: Handling register route
+2025-04-22 10:11:30,308 DEBUG: Loading user with ID: 1
+2025-04-22 10:11:30,411 DEBUG: Register attempt for username: izzu
+2025-04-22 10:11:30,643 INFO: User registered: izzu
+2025-04-22 10:11:30,644 INFO: 127.0.0.1 - - [22/Apr/2025 10:11:30] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-22 10:11:30,671 DEBUG: Handling login route
+2025-04-22 10:11:30,675 DEBUG: Loading user with ID: 1
+2025-04-22 10:11:30,678 INFO: 127.0.0.1 - - [22/Apr/2025 10:11:30] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-04-22 10:11:30,706 DEBUG: Loading user with ID: 1
+2025-04-22 10:11:30,711 DEBUG: Handling dashboard route for user 1
+2025-04-22 10:11:30,718 DEBUG: Checking premium status for user 1
+2025-04-22 10:11:30,746 INFO: 127.0.0.1 - - [22/Apr/2025 10:11:30] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 10:11:35,881 DEBUG: Loading user with ID: 1
+2025-04-22 10:11:35,884 DEBUG: Handling subscription route for user 1
+2025-04-22 10:11:35,885 DEBUG: Checking premium status for user 1
+2025-04-22 10:11:35,922 INFO: 127.0.0.1 - - [22/Apr/2025 10:11:35] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 10:11:54,538 DEBUG: Loading user with ID: 1
+2025-04-22 10:11:54,542 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Yearly')])
+2025-04-22 10:11:54,542 DEBUG: Selected plan: Yearly
+2025-04-22 10:11:54,543 DEBUG: Checking premium status for user 1
+2025-04-22 10:11:54,862 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:11:54,866 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=100&line_items[0][price_data][product_data][name]=Yearly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FYearly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Yearly
+2025-04-22 10:11:54,885 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:11:56,222 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 200 2682
+2025-04-22 10:11:56,225 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2025-04-22 10:11:56,228 DEBUG: body='{\n  "id": "cs_test_a1sh7uFFqkbkgkBxgnrE1zCaLoszyh4UWtV0JLMKfJ66puftNGyvkvUYcH",\n  "object": "checkout.session",\n  "adaptive_pricing": {\n    "enabled": true\n  },\n  "after_expiration": null,\n  "allow_promotion_codes": null,\n  "amount_subtotal": 100,\n  "amount_total": 100,\n  "automatic_tax": {\n    "enabled": false,\n    "liability": null,\n    "provider": null,\n    "status": null\n  },\n  "billing_address_collection": null,\n  "cancel_url": "http://127.0.0.1:5000/subscription",\n  "client_reference_id": null,\n  "client_secret": null,\n  "collected_information": null,\n  "consent": null,\n  "consent_collection": null,\n  "created": 1745334715,\n  "currency": "usd",\n  "currency_conversion": null,\n  "custom_fields": [],\n  "custom_text": {\n    "after_submit": null,\n    "shipping_address": null,\n    "submit": null,\n    "terms_of_service_acceptance": null\n  },\n  "customer": null,\n  "customer_creation": "if_required",\n  "customer_details": null,\n  "customer_email": null,\n  "discounts": [],\n  "expires_at": 1745421115,\n  "invoice": null,\n  "invoice_creation": {\n    "enabled": false,\n    "invoice_data": {\n      "account_tax_ids": null,\n      "custom_fields": null,\n      "description": null,\n      "footer": null,\n      "issuer": null,\n      "metadata": {},\n      "rendering_options": null\n    }\n  },\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n    "plan_name": "Yearly",\n    "user_id": "1"\n  },\n  "mode": "payment",\n  "payment_intent": null,\n  "payment_link": null,\n  "payment_method_collection": "if_required",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "permissions": null,\n  "phone_number_collection": {\n    "enabled": false\n  },\n  "recovered_from": null,\n  "saved_payment_method_options": null,\n  "setup_intent": null,\n  "shipping_address_collection": null,\n  "shipping_cost": null,\n  "shipping_details": null,\n  "shipping_options": [],\n  "status": "open",\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "http://127.0.0.1:5000/subscribe-success/Yearly",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_shipping": 0,\n    "amount_tax": 0\n  },\n  "ui_mode": "hosted",\n  "url": "https://checkout.stripe.com/c/pay/cs_test_a1sh7uFFqkbkgkBxgnrE1zCaLoszyh4UWtV0JLMKfJ66puftNGyvkvUYcH#fidkdWxOYHwnPyd1blpxYHZxWjA0V0Y0V2tXRGdqTn02UnJ1akt3TWJySEdKYk9ARj1qUlxQckpSNkF%2FV3JGXVN0TFFUXGpvPX1CdjFofH09QHZsU2AwRGBIaDdddE1qU09RR0hyVWBPc1VdNTVON29vN39IUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",\n  "wallet_options": null\n}' message='API response body'
+2025-04-22 10:11:56,228 DEBUG: link=https://dashboard.stripe.com/test/logs/req_6tDMWrzhC7TFYw message='Dashboard link for request'
+2025-04-22 10:11:56,292 INFO: Created checkout session: cs_test_a1sh7uFFqkbkgkBxgnrE1zCaLoszyh4UWtV0JLMKfJ66puftNGyvkvUYcH
+2025-04-22 10:11:56,301 INFO: 127.0.0.1 - - [22/Apr/2025 10:11:56] "POST /create-checkout-session HTTP/1.1" 200 -
+2025-04-22 10:12:05,367 DEBUG: Loading user with ID: 1
+2025-04-22 10:12:05,371 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Monthly')])
+2025-04-22 10:12:05,372 DEBUG: Selected plan: Monthly
+2025-04-22 10:12:05,373 DEBUG: Checking premium status for user 1
+2025-04-22 10:12:05,379 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:12:05,381 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=20&line_items[0][price_data][product_data][name]=Monthly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FMonthly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Monthly
+2025-04-22 10:12:05,401 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:12:06,473 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 400 349
+2025-04-22 10:12:06,475 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2025-04-22 10:12:06,475 DEBUG: body='{\n  "error": {\n    "code": "amount_too_small",\n    "doc_url": "https://stripe.com/docs/error-codes/amount-too-small",\n    "message": "The Checkout Session\'s total amount due must add up to at least $0.50 usd",\n    "request_log_url": "https://dashboard.stripe.com/test/logs/req_n9nhfpMPTbkvbt?t=1745334725",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2025-04-22 10:12:06,476 DEBUG: link=https://dashboard.stripe.com/test/logs/req_n9nhfpMPTbkvbt message='Dashboard link for request'
+2025-04-22 10:12:06,490 INFO: error_code=amount_too_small error_message="The Checkout Session's total amount due must add up to at least $0.50 usd" error_param=None error_type=invalid_request_error message='Stripe API error received'
+2025-04-22 10:12:06,494 ERROR: Stripe error: Request req_n9nhfpMPTbkvbt: The Checkout Session's total amount due must add up to at least $0.50 usd
+2025-04-22 10:12:06,496 INFO: 127.0.0.1 - - [22/Apr/2025 10:12:06] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+2025-04-22 10:18:43,675 DEBUG: Script starting... Process ID: 22264
+2025-04-22 10:18:43,699 DEBUG: Loading environment variables...
+2025-04-22 10:18:43,756 DEBUG: FLASK_ENV: None
+2025-04-22 10:18:43,759 DEBUG: Creating Flask app...
+2025-04-22 10:18:43,834 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:18:43,834 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:18:43,835 DEBUG: Configuring Flask app...
+2025-04-22 10:18:43,836 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:18:43,836 DEBUG: Configuring Stripe...
+2025-04-22 10:18:43,837 DEBUG: Stripe configured successfully
+2025-04-22 10:18:43,837 DEBUG: Initializing Flask extensions...
+2025-04-22 10:18:43,876 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:18:43,877 DEBUG: Creating upload folder...
+2025-04-22 10:18:43,880 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:18:43,881 DEBUG: Defining models...
+2025-04-22 10:18:43,945 DEBUG: Models defined successfully
+2025-04-22 10:18:43,946 DEBUG: Defining forms...
+2025-04-22 10:18:43,949 DEBUG: Forms defined successfully
+2025-04-22 10:18:43,949 DEBUG: Setting up user loader...
+2025-04-22 10:18:43,950 DEBUG: Defining routes...
+2025-04-22 10:18:43,981 DEBUG: Routes defined successfully
+2025-04-22 10:18:43,982 DEBUG: Initializing database...
+2025-04-22 10:18:44,037 DEBUG: Database initialized successfully
+2025-04-22 10:18:44,038 DEBUG: Starting Flask app...
+2025-04-22 10:18:44,097 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:18:44,099 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:18:59,684 DEBUG: Script starting... Process ID: 15192
+2025-04-22 10:18:59,685 DEBUG: Loading environment variables...
+2025-04-22 10:18:59,686 DEBUG: FLASK_ENV: None
+2025-04-22 10:18:59,687 DEBUG: Creating Flask app...
+2025-04-22 10:18:59,689 DEBUG: Instance path created/exists: C:\Users\shaik\Downloads\secure-main\secure-main\instance
+2025-04-22 10:18:59,689 DEBUG: Environment: development, IS_PRODUCTION: False
+2025-04-22 10:18:59,690 DEBUG: Configuring Flask app...
+2025-04-22 10:18:59,690 DEBUG: App config: <Config {'DEBUG': False, 'TESTING': False, 'PROPAGATE_EXCEPTIONS': None, 'SECRET_KEY': 'eb5309bed65e17d8c9ac293f2e245f6ab30979d69e338dd3', 'PERMANENT_SESSION_LIFETIME': datetime.timedelta(days=31), 'USE_X_SENDFILE': False, 'SERVER_NAME': None, 'APPLICATION_ROOT': '/', 'SESSION_COOKIE_NAME': 'session', 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_PATH': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_SECURE': False, 'SESSION_COOKIE_SAMESITE': None, 'SESSION_REFRESH_EACH_REQUEST': True, 'MAX_CONTENT_LENGTH': 16777216, 'SEND_FILE_MAX_AGE_DEFAULT': None, 'TRAP_BAD_REQUEST_ERRORS': None, 'TRAP_HTTP_EXCEPTIONS': False, 'EXPLAIN_TEMPLATE_LOADING': False, 'PREFERRED_URL_SCHEME': 'http', 'TEMPLATES_AUTO_RELOAD': None, 'MAX_COOKIE_SIZE': 4093, 'SQLALCHEMY_DATABASE_URI': 'sqlite:///db.app', 'SQLALCHEMY_TRACK_MODIFICATIONS': False, 'UPLOAD_FOLDER': 'static/uploads', 'ALLOWED_EXTENSIONS': {'jpg', 'jpeg'}, 'JWT_SECRET_KEY': '7127b70009319336c4c86b81a0c971efb2a650a83f2b4099', 'RECAPTCHA_SITE_KEY': None, 'RECAPTCHA_SECRET_KEY': None, 'WTF_CSRF_FIELD_NAME': 'csrf_token', 'WTF_CSRF_HEADERS': ['X-CSRF-Token']}>
+2025-04-22 10:18:59,691 DEBUG: Configuring Stripe...
+2025-04-22 10:18:59,691 DEBUG: Stripe configured successfully
+2025-04-22 10:18:59,691 DEBUG: Initializing Flask extensions...
+2025-04-22 10:18:59,746 DEBUG: Extensions initialized: SQLAlchemy, Migrate, LoginManager, CSRFProtect
+2025-04-22 10:18:59,746 DEBUG: Creating upload folder...
+2025-04-22 10:18:59,748 DEBUG: Upload folder created/exists: static/uploads
+2025-04-22 10:18:59,748 DEBUG: Defining models...
+2025-04-22 10:18:59,759 DEBUG: Models defined successfully
+2025-04-22 10:18:59,760 DEBUG: Defining forms...
+2025-04-22 10:18:59,761 DEBUG: Forms defined successfully
+2025-04-22 10:18:59,761 DEBUG: Setting up user loader...
+2025-04-22 10:18:59,762 DEBUG: Defining routes...
+2025-04-22 10:18:59,771 DEBUG: Routes defined successfully
+2025-04-22 10:18:59,771 DEBUG: Initializing database...
+2025-04-22 10:18:59,784 DEBUG: Database initialized successfully
+2025-04-22 10:18:59,785 DEBUG: Starting Flask app...
+2025-04-22 10:18:59,866 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 10:18:59,867 INFO: [33mPress CTRL+C to quit[0m
+2025-04-22 10:19:04,563 DEBUG: Handling index route
+2025-04-22 10:19:04,567 DEBUG: Loading user with ID: 1
+2025-04-22 10:19:04,580 INFO: 127.0.0.1 - - [22/Apr/2025 10:19:04] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-22 10:19:04,653 DEBUG: Loading user with ID: 1
+2025-04-22 10:19:04,659 DEBUG: Handling dashboard route for user 1
+2025-04-22 10:19:04,692 DEBUG: Checking premium status for user 1
+2025-04-22 10:19:04,741 INFO: 127.0.0.1 - - [22/Apr/2025 10:19:04] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 10:19:11,015 DEBUG: Loading user with ID: 1
+2025-04-22 10:19:11,024 DEBUG: Handling dashboard route for user 1
+2025-04-22 10:19:11,052 DEBUG: Checking premium status for user 1
+2025-04-22 10:19:11,066 INFO: 127.0.0.1 - - [22/Apr/2025 10:19:11] "GET /dashboard HTTP/1.1" 200 -
+2025-04-22 10:19:16,960 DEBUG: Loading user with ID: 1
+2025-04-22 10:19:16,962 DEBUG: Handling subscription route for user 1
+2025-04-22 10:19:16,963 DEBUG: Checking premium status for user 1
+2025-04-22 10:19:16,995 INFO: 127.0.0.1 - - [22/Apr/2025 10:19:16] "GET /subscription HTTP/1.1" 200 -
+2025-04-22 10:19:20,998 DEBUG: Loading user with ID: 1
+2025-04-22 10:19:21,004 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Weekly')])
+2025-04-22 10:19:21,006 DEBUG: Selected plan: Weekly
+2025-04-22 10:19:21,007 DEBUG: Checking premium status for user 1
+2025-04-22 10:19:21,153 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:19:21,154 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=10&line_items[0][price_data][product_data][name]=Weekly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FWeekly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Weekly
+2025-04-22 10:19:21,174 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:19:22,453 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 400 349
+2025-04-22 10:19:22,456 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=400
+2025-04-22 10:19:22,457 DEBUG: body='{\n  "error": {\n    "code": "amount_too_small",\n    "doc_url": "https://stripe.com/docs/error-codes/amount-too-small",\n    "message": "The Checkout Session\'s total amount due must add up to at least $0.50 usd",\n    "request_log_url": "https://dashboard.stripe.com/test/logs/req_xwozrc8Iijuej6?t=1745335161",\n    "type": "invalid_request_error"\n  }\n}\n' message='API response body'
+2025-04-22 10:19:22,459 DEBUG: link=https://dashboard.stripe.com/test/logs/req_xwozrc8Iijuej6 message='Dashboard link for request'
+2025-04-22 10:19:22,461 INFO: error_code=amount_too_small error_message="The Checkout Session's total amount due must add up to at least $0.50 usd" error_param=None error_type=invalid_request_error message='Stripe API error received'
+2025-04-22 10:19:22,464 ERROR: Stripe error: Request req_xwozrc8Iijuej6: The Checkout Session's total amount due must add up to at least $0.50 usd
+2025-04-22 10:19:22,468 INFO: 127.0.0.1 - - [22/Apr/2025 10:19:22] "[31m[1mPOST /create-checkout-session HTTP/1.1[0m" 400 -
+2025-04-22 10:19:25,586 DEBUG: Loading user with ID: 1
+2025-04-22 10:19:25,588 DEBUG: Handling create-checkout-session route for user 1, data: ImmutableMultiDict([('plan_name', 'Yearly')])
+2025-04-22 10:19:25,588 DEBUG: Selected plan: Yearly
+2025-04-22 10:19:25,589 DEBUG: Checking premium status for user 1
+2025-04-22 10:19:25,591 INFO: message='Request to Stripe api' method=post url=https://api.stripe.com/v1/checkout/sessions
+2025-04-22 10:19:25,591 DEBUG: api_version=2024-06-20 message='Post details' post_data=payment_method_types[0]=card&line_items[0][price_data][currency]=usd&line_items[0][price_data][unit_amount]=100&line_items[0][price_data][product_data][name]=Yearly+Subscription&line_items[0][quantity]=1&mode=payment&success_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscribe-success%2FYearly&cancel_url=http%3A%2F%2F127.0.0.1%3A5000%2Fsubscription&metadata[user_id]=1&metadata[plan_name]=Yearly
+2025-04-22 10:19:25,594 DEBUG: Starting new HTTPS connection (1): api.stripe.com:443
+2025-04-22 10:19:26,698 DEBUG: https://api.stripe.com:443 "POST /v1/checkout/sessions HTTP/11" 200 2682
+2025-04-22 10:19:26,700 INFO: message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions response_code=200
+2025-04-22 10:19:26,701 DEBUG: body='{\n  "id": "cs_test_a1hdcQazclz0dkPWCIHBTRBhxrPV9bbYDO2IpuLXVutyRKzSfIF7fNDhiA",\n  "object": "checkout.session",\n  "adaptive_pricing": {\n    "enabled": true\n  },\n  "after_expiration": null,\n  "allow_promotion_codes": null,\n  "amount_subtotal": 100,\n  "amount_total": 100,\n  "automatic_tax": {\n    "enabled": false,\n    "liability": null,\n    "provider": null,\n    "status": null\n  },\n  "billing_address_collection": null,\n  "cancel_url": "http://127.0.0.1:5000/subscription",\n  "client_reference_id": null,\n  "client_secret": null,\n  "collected_information": null,\n  "consent": null,\n  "consent_collection": null,\n  "created": 1745335166,\n  "currency": "usd",\n  "currency_conversion": null,\n  "custom_fields": [],\n  "custom_text": {\n    "after_submit": null,\n    "shipping_address": null,\n    "submit": null,\n    "terms_of_service_acceptance": null\n  },\n  "customer": null,\n  "customer_creation": "if_required",\n  "customer_details": null,\n  "customer_email": null,\n  "discounts": [],\n  "expires_at": 1745421565,\n  "invoice": null,\n  "invoice_creation": {\n    "enabled": false,\n    "invoice_data": {\n      "account_tax_ids": null,\n      "custom_fields": null,\n      "description": null,\n      "footer": null,\n      "issuer": null,\n      "metadata": {},\n      "rendering_options": null\n    }\n  },\n  "livemode": false,\n  "locale": null,\n  "metadata": {\n    "plan_name": "Yearly",\n    "user_id": "1"\n  },\n  "mode": "payment",\n  "payment_intent": null,\n  "payment_link": null,\n  "payment_method_collection": "if_required",\n  "payment_method_configuration_details": null,\n  "payment_method_options": {\n    "card": {\n      "request_three_d_secure": "automatic"\n    }\n  },\n  "payment_method_types": [\n    "card"\n  ],\n  "payment_status": "unpaid",\n  "permissions": null,\n  "phone_number_collection": {\n    "enabled": false\n  },\n  "recovered_from": null,\n  "saved_payment_method_options": null,\n  "setup_intent": null,\n  "shipping_address_collection": null,\n  "shipping_cost": null,\n  "shipping_details": null,\n  "shipping_options": [],\n  "status": "open",\n  "submit_type": null,\n  "subscription": null,\n  "success_url": "http://127.0.0.1:5000/subscribe-success/Yearly",\n  "total_details": {\n    "amount_discount": 0,\n    "amount_shipping": 0,\n    "amount_tax": 0\n  },\n  "ui_mode": "hosted",\n  "url": "https://checkout.stripe.com/c/pay/cs_test_a1hdcQazclz0dkPWCIHBTRBhxrPV9bbYDO2IpuLXVutyRKzSfIF7fNDhiA#fidkdWxOYHwnPyd1blpxYHZxWjA0V0Y0V2tXRGdqTn02UnJ1akt3TWJySEdKYk9ARj1qUlxQckpSNkF%2FV3JGXVN0TFFUXGpvPX1CdjFofH09QHZsU2AwRGBIaDdddE1qU09RR0hyVWBPc1VdNTVON29vN39IUycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl",\n  "wallet_options": null\n}' message='API response body'
+2025-04-22 10:19:26,702 DEBUG: link=https://dashboard.stripe.com/test/logs/req_qbN9lEpPPEsJJU message='Dashboard link for request'
+2025-04-22 10:19:26,722 INFO: Created checkout session: cs_test_a1hdcQazclz0dkPWCIHBTRBhxrPV9bbYDO2IpuLXVutyRKzSfIF7fNDhiA
+2025-04-22 10:19:26,723 INFO: 127.0.0.1 - - [22/Apr/2025 10:19:26] "POST /create-checkout-session HTTP/1.1" 200 -
